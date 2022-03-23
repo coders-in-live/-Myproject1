@@ -1,1 +1,1 @@
-This folder contains the pages were the user interacts.
+This folder contains the pages were the user interacts(feedback and ask question pages).
