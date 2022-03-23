@@ -1,0 +1,2 @@
+Hey everyone, we are practicng on html, css and js inorder to be able to work as frontend software engineers.
+This is our first project as a team of @coders and we are delighted to share our work and get comment.😊😊😊 
