@@ -1,0 +1,1 @@
+This folder contains HTML files for the website.Under this there are folders to separate the pages logically.

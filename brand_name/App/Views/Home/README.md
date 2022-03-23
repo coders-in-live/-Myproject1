@@ -1,0 +1,1 @@
+This folder will be holding the home page, the four main pages and books exploring page.

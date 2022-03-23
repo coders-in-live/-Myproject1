@@ -1,0 +1,1 @@
+This is a place for notes, books, and articles in pdf, docx and doc, odt, rtf, tex, txt, wpd formats.And for compressed 7z, arj, deb, pkg, rar, rpm, tar.gz, z, zip file formats are used.

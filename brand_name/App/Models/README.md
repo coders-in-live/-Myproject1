@@ -1,0 +1,1 @@
+This folder contains model class files typically public properties.

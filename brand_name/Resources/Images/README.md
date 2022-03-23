@@ -1,0 +1,1 @@
+A place for image files in ai, bmp, gif, ico, jpeg or jpg, png, ps, psd, svg, tif or tiff formats
