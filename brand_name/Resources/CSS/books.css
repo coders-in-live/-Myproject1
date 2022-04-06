@@ -45,6 +45,7 @@ background-image: linear-gradient(to right, rgb(146, 156, 241),rgba(238, 235, 24
     width:100%;
     display : block;
     flex-direction: column;
+	trasnsition:.3 ease;
 }
 
 .row1-button{
