@@ -45,15 +45,14 @@ background-image: linear-gradient(to right, rgb(146, 156, 241),rgba(238, 235, 24
     width:100%;
     display : block;
     flex-direction: column;
-	trasnsition:.3 ease;
+	trasnsition:0.3 ease;
 }
 
 .row1-button{
     color: red;
 }
 .row1-img:hover{
-    transform:scale(1.06);
-	z-index:2;
+    transform:scale(1.3);
     
 }
 
