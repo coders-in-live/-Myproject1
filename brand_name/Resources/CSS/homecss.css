@@ -1,91 +1,305 @@
-*{
-    margin: 0;
-    padding: 0;   
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
 }
+
 body {
-    background-image: linear-gradient(to right bottom, #fbf5ee, #ecebe9, #a7a7a2, #80827e, #798f79);
+    /*background-image: linear-gradient(to right bottom, #fbf5ee, #ecebe9, #a7a7a2, #80827e, #798f79);*/
+    background-color: #ffffff;
+    overflow-x: hidden;
 }
-.nav{
-    background-image: url("../Images/sun.jpg");
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2%;
+   /* background-image: url("../Images/sun.jpg");*/
+   background-image: linear-gradient(to left top,rgb(45, 233, 186),rgba(56,233,90));
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5%;
+}
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: violet;
+    padding-left: 10%;
+}
+
+nav {
     background-size: cover;
-    text-align:center;
-    list-style-type:none;
+    text-align: center;
+    list-style-type: none;
     padding: 5px;
     font-size: x-large;
     color: bisque;
 }
-.nav pre{
-    text-size-adjust:50%;
+
+nav {
+    text-size-adjust: 50%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:xx-large;
+    font-size: 12pt;
     text-align: justify;
+    position: relative;
+    right: 20%;
 }
-.nav ul li{
-    width: 120px;
+
+nav ul li {
+
     margin: 15px;
-    padding:15px;
+    padding: 15px;
     display: inline;
-}
-.nav ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color:rgb(10, 9, 9);
-    font-weight: bolder;
-}
-.nav ul li{
-    width:120px;
-    margin:15px;
-    padding:15px;
     position: relative;
 }
-.nav ul li ul
-{
-    display:none;
-    position:absolute;
-    background: rgb(211, 197, 197);
-    padding: 10px;
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(10, 9, 9);
+    font-weight: 300;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    left: 5%;
+    min-width: max-content;
+    background-image: linear-gradient(to left top,rgb(45, 233, 186),rgba(56,233,90));
+    padding: 12px 16px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     z-index: 1;
 }
-.nav ul li ul a 
-{
-    color:black;
-    padding: 12px 16px;
+
+nav ul li ul a {
+    color: black;
     text-decoration: none;
     display: block;
     text-align: left;
 }
-.nav ul li:hover ul
-{
-    display:block;
- }
-.nav ul li ul li 
-{
-    width: 180px;
-   border-radius: 4px;
+
+.menu:hover .sub-menu {
+    display: block;
+}
+
+nav ul li ul li {
+
+    border-radius: 4px;
 
 }
-.nav ul li ul li a:hover
-{
-background-color: #b6aaec;
+
+.sub-menu ul li a:hover {
+    color: #ffffff;
 }
-.img
+
+.top
 {
-position: relative;
-margin-left: auto;
-margin-right: auto;
-display: block;
-width: 40%;
+    display: inline-block;
+}
+
+#fidel {
+    width: 150%;
+    display: block;
+    position: relative;
+    top:10%;
+    left: 10%;
+}
+
+#fidel img {
+    display: inline;
+    position: relative;
+}
+.all
+{
+    position: relative;
+    left: 50%;
+}
+.slide,
+.slide1,
+.slide2,
+.slide3 {
+    position: absolute;
+    left: 300px;
+    top: 100px;
+}
+
+.all img {
+    position: relative;
+    width: 100%;
+    display: block;
+    animation: zoom 3s linear infinite;
+}
+
+@keyframes zoom {
+    0% {
+        width: 300px;
+        height: auto;
+    }
+
+    25% {
+        width: 350px;
+        height: auto;
+    }
+
+    50% {
+        width: 400px;
+        height: auto;
+    }
+
+    75% {
+        width: 350px;
+        height: auto;
+    }
+
+    100% {
+        width: 300px;
+        height: auto;
+    }
 
 }
-.image1
-{
+
+.slide {
+    animation: slide 12s linear infinite;
+}
+
+.slide1 {
+    animation: slide1 12s linear infinite;
+}
+
+.slide2 {
+    animation: slide2 12s linear infinite;
+}
+
+.slide3 {
+    animation: slide3 12s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        visibility: visible;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+
+}
+
+@keyframes slide1 {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: visible;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+
+}
+
+@keyframes slide2 {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+
+}
+
+@keyframes slide3 {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+
+}
+
+#new p {
+    margin: 30px;
+    font-size: x-large;
+    font-weight: 100;
+    position: absolute;
+    left: 50%;
+    display: inline;
+}
+
+#new pre {
+    font-size: xx-large;
+    font-weight: 200;
+    text-align: center;
+    color: brown;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+.img {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 40%;
+}
+
+.image1 {
     position: relative;
     width: 100%;
     height: auto;
     display: block;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -97,12 +311,12 @@ width: 40%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(228, 228, 228, 0.5);
-  }
-  
+}
+
 .img:hover .overlay {
     opacity: 1;
-  }
-  
+}
+
 .text {
     color: rgb(0, 0, 0);
     font-size: 20px;
@@ -113,151 +327,5 @@ width: 40%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-#new{
-      float:right;
 }
-.slide,.slide1,.slide2,.slide3
-{
-    position: absolute;
-    left:70px;
-    bottom: -500px;  
-}
-#fidel{
-    width: 150%;
-    display: block;
-    position: relative;
-}
-#fidel img
-{
-
-    display: inline;
-    position: relative;
-}
-#fidel p{
-    margin: 30px;
-    font-size: x-large;
-    font-weight: 100;
-    position: absolute;
-    display: inline;
-}
-#fidel pre{
-    font-size: xx-large;
-    font-weight: 200;
-    text-align: center;
-    color: brown;
-    display: block;
-    position: absolute;
-}
-.all{
-    
-    display: block;
-    
-    position: relative;
-}
-.all img{
-    position: relative;
-    width: 120%;
-    display: block;
-   animation: zoom 3s linear infinite;
-   float: left;
-}
-@keyframes zoom {
-    100%
-    {
-        width: 100%;
-    }
-    
-}
-.slide
-{
-    animation: slide 12s linear infinite;
-}
-.slide1
-{
-    animation: slide1 12s linear infinite;
-}
-.slide2
-{
-    animation: slide2 12s linear infinite;
-}
-.slide3
-{
-    animation: slide3 12s linear infinite;
-}
-@keyframes slide {
-    0%{
-        visibility: visible;
-    }
-    25%{
-        visibility: hidden;
-    }
-    50%{
-        visibility: hidden;
-    }
-    75%{
-        visibility: hidden;
-    }
-    100%{
-        visibility: hidden;
-    }
-
-}
-@keyframes slide1 {
-    0%{
-        visibility: hidden;
-    }
-    25%{
-        visibility: hidden;
-    }
-    50%{
-        visibility: visible;
-    }
-    75%{
-        visibility: hidden;
-    }
-    100%{
-        visibility: hidden;
-    }
-
-}
-@keyframes slide2 {
-    0%{
-        visibility: hidden;
-    }
-    25%{
-        visibility: hidden;
-    }
-    50%{
-        visibility: hidden;
-    }
-    75%{
-        visibility: visible;
-    }
-    100%{
-        visibility: hidden;
-    }
-
-}
-@keyframes slide3 {
-    0%{
-        visibility: hidden;
-    }
-    25%{
-        visibility: hidden;
-    }
-    50%{
-        visibility: hidden;
-    }
-    75%{
-        visibility: hidden;
-    }
-    100%{
-        visibility: visible;
-    }
-
-}
-@media(max-width="600px")
-{
-
-}
+@media(max-width="600px") {}
