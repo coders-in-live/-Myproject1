@@ -4,6 +4,8 @@
 <head>
     <title>Feedback-page</title>
     <link rel="stylesheet" href="../../../Resources/CSS/feedback.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 <body>
@@ -13,7 +15,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <div class="menu">
-                    <li><a href="#">ስነ ቃል</a></li>
+                    <li><a href="#">ስነ ቃል</a>&nbsp;<i class="fa fa-angle-down" style="font-size: 24px;"></i></li>
                     <div class="sub-menu">
                         <ul>
                             <li><a href="#">ቅኔ</a></li>
@@ -35,7 +37,7 @@
                 Name: <input type="text" placeholder="Name" id="name"><br><br>
                 Email: <input type="email" required placeholder="E-mail" id="email"><br><br>
                 <textarea rows="10" cols="50" placeholder="Write what you feel about us" id="textarea"></textarea><br>
-                <div class="button"><input type="submit" value="send" id="btn"></div>
+                <div class="button"><a href="#"><ion-icon name="send-sharp"></ion-icon></a><!--<input type="submit" value="send" id="btn">--></div>
             </form>
         </div>
     </main>
